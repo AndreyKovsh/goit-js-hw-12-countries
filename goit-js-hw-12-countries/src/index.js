@@ -1,4 +1,4 @@
-import './styles.css';
+import './css/main.css';
 import countriesListMarkup from "./temp/countries-list.hbs";
 import countryMarkup from "./temp/countries-markup.hbs";
 import API from './js/fetchCountries';
@@ -8,7 +8,7 @@ import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 
 const cardContainer = document.querySelector('.js-card-container');
-const searchInput = document.querySelector('.js-search-input');
+const searchInput = document.querySelector('.input-search');
 
 searchInput.addEventListener('input', debounce(onSearch, 500));
 
